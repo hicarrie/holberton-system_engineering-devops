@@ -33,3 +33,7 @@ A script that changes the owner to betty and the group owner to holberton for al
 A script that changes the owner and the group owner of the file _hello to betty and holberton respectively
 ### 16. If only
 A script that changes the owner of the file hello to betty only if it is owned by the user guillaume
+### 17. Star Wars
+A script that plays Star Wars IV in terminal
+### 18. RTFM
+A man identical to example given

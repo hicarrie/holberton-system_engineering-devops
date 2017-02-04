@@ -1,2 +1,2 @@
 #!/bin/bash
-find -depth -type d -print | find -depth -type d -iname ".*" -print | wc -l
+find -mindepth 1 -type d -print | wc -l

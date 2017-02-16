@@ -37,4 +37,5 @@ A script that deletes all files in the current working directory that end with t
 A script that creates the directories welcome/ welcome/to/ and welcome/to/holberton
 ### 18. Life is a series of commas, not periods
 A command that lists all files and directories of the current directory, separated by commas
-### 19. A magic file that can be used with the command file to detect Holberton data files
+### 19. File type: Holberton
+A magic file that can be used with the command file to detect Holberton data files

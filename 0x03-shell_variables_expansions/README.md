@@ -29,3 +29,11 @@ A script that prints all possible combinations of two letters, except oo
 A script that prints a number with two decimal places
 ### 14. Decimal to Hexadecimal
 A script that converts a number from base 10 to base 16
+### 15. What happens when you type ls *.c
+A blog post describing step by step what happens when you type ls *.c and hit Enter in your shell
+### 16. What is the difference between a hard link and a symbolic link?
+A blog post explaining what are hard and symbolic links on Linux, how to create them, and what is the difference between the two
+### 17. Everyone is a proponent of strong encryption
+A script that encodes and decodes text using the rot13 encryption
+### 18. The eggs of the brood need to be an odd number
+A script that prints every other line from the input, starting with the first line

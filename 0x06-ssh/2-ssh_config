@@ -1,0 +1,4 @@
+Host 66.70.184.156
+     User ubuntu
+     IdentitiesOnly Yes
+     IdentityFile /home/carrie/.ssh/holberton

@@ -15,9 +15,11 @@
 **3-UDP_and_TCP:** Which statement is correct for the TCP box:
 - Is a protocol that is transferring data in a slow way but surely
 - Is a protocol that is transferring data in a fast way and might loss data along in the process
+
 Which statement is correct for the UDP box:
 - Is a protocol that is transferring data in a slow way but surely
 - Is a protocol that is transferring data in a fast way and might loss data along in the process
+
 Which statement is correct for the TCP worker:
 - Have you received boxes x, y, z?
 - May I increase the rate at which I am sending you boxes?

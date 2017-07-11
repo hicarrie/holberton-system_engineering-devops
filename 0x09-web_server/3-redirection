@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Configures nginx server so /redirect_me redirects to another page
+redirect="server_name localhost;\n\n\tlocation /redirect_me {\n\t\treturn 301 https://www.youtube.com/watch?v=oH7jPAvFTU8;\n\t}"
+sed -i "s|server_name localhost;|$redirect|" /etc/nginx/sites-enabled/default
+nginx -s reload

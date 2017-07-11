@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Commands used to debug an Apache server on a container and return a page
+# containing "Hello Holberton" when querying the root of it
+service apache2 start

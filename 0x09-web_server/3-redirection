@@ -2,5 +2,6 @@
 # Configures nginx server so /redirect_me redirects to another page
 sudo apt-get -y install nginx
 sudo service nginx start
-sudo sed -i '26 i \    rewrite ^/redirect_me https://www.youtube.com/watch?v=oH7jPAvFTU8 permanent;' /etc/nginx/sites-available/default
+redirect="\tlocation /redirect_me {\n\t\treturn 301 https://www.youtube.com/watch?v=oH7jPAvFTU8;\n\t}"
+sudo sed -i '26 i $redirect' /etc/nginx/sites-available/default
 sudo nginx -s reload

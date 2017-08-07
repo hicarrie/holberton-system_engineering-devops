@@ -22,5 +22,7 @@
 
 **3-show_attached_IPs:** a Bash script that displays all active IPv4 IPs on the machine it's executed on
 
+**4-port_listening_on_localhost:** a Bash script that listens on port `98` on `localhost`
+
 ## Author
 *Carrie Ybay* - [Twitter](http://twitter.com/hicarrie_)

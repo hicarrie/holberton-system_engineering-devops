@@ -11,8 +11,6 @@
 - A hostname that means this computer
 - An IP attached to a computer
 
-**1-types_of_network:** On what type of network are Holberton iMacs connected to? What type of network could connect the Holberton HQ office with the Holberton-Gandi office? What network do you use when you browse www.holbertonschool.com from your smartphone (not connected to the Wifi)?
-
 **1-wildcard:** What is 0.0.0.0?
 - All IPv4 addresses on the local machine
 - All the IPs

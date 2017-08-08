@@ -1,16 +1,16 @@
 # Sysadmin / Devops
 ### Beginning Shell / Bash Scripts
 
-- 0x00-shell_basics
-- 0x01-shell_permissions
-- 0x02-shell_redirections
-- 0x03-shell_variables_expansions
-- 0x04-loops_conditions_and_parsing
-- 0x05-processes_and_signals
-- 0x06-ssh
-- 0x07-networking_basics
-- 0x08-web_stack_debugging_0
-- 0x09-web_server
-- 0x0A-web_infrastructure_design
-- 0x0B-networking_basics_2
-- 0x0C-web_stack_debugging_1
+- 0x00 - Shell Basics
+- 0x01 - Shell Permissions
+- 0x02 - Shell Redirections
+- 0x03 - Shell Variables and Expansions
+- 0x04 - Loops, Conditions, and Parsing
+- 0x05 - Processes and Signals
+- 0x06 - SSH
+- 0x07 - Networking Basics
+- 0x08 - Web Stack Debugging 0
+- 0x09 - Web Server
+- 0x0A - Web Infrastructure Design
+- 0x0B - Networking Basics 2
+- 0x0C - Web Stack Debugging 1

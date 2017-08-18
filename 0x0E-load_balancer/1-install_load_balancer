@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 # Installs HAProxy and configures to send traffic to web-01 and web-02
 # with roundrobin algorithm
+sudo echo deb http://archive.ubuntu.com/ubuntu trusty-backports main universe | tee /etc/apt/sources.list.d/backports.list
 sudo apt-get update
-sudo apt-get -y install haproxy
+sudo apt-get -y install haproxy -t trusty-backports
 sudo sed -i -e "\$aENABLED=1" /etc/default/haproxy
 sudo cp /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg{,.original}
-config="backend web\n\tmode http\n\tbalance roundrobin\n\tserver 113-web-01 66.70.184.156:80 check\n\tserver 113-web-02 142.44.164.119:80 check\n"
+config="listen backend *:80\n\tmode http\n\tbalance roundrobin\n\tserver 113-web-01 66.70.184.156:80 check\n\tserver 113-web-02 142.44.164.119:80 check\n"
 sudo sed -i -e "\$a$config" /etc/haproxy/haproxy.cfg
 sudo service haproxy start

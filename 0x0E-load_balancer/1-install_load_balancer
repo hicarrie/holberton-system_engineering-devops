@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 # Installs HAProxy and configures to send traffic to web-01 and web-02
 # with roundrobin algorithm
-sudo add-apt-repository ppa:vbernat/haproxy-1.5
 sudo apt-get update
-sudo apt-get -y dist-upgrade
 sudo apt-get -y install haproxy
 sudo sed -i -e "\$aENABLED=1" /etc/default/haproxy
 sudo service haproxy start

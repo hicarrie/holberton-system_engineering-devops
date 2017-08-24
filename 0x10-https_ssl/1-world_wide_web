@@ -4,17 +4,17 @@
 
 get_param()
 {
-    record=( $(dig $i.$1 | awk '/ANSWER SECTION:/ {getline; print $4}') )
-    ip=( $(dig $i.$1 | awk '/ANSWER SECTION:/ {getline; print $5}') )
+    record=$(dig $i.$1 | awk '/ANSWER SECTION:/ {getline; print $4}')
+    ip=$(dig $i.$1 | awk '/ANSWER SECTION:/ {getline; print $5}')
 }
 
-if [ -z "$2" ]; then
+if [ -z $2 ]; then
     for i in "www" "lb-01" "web-01" "web-02"; do
-	get_param "$1" "$1"
-	echo "The subdomain $i is a ${record[0]} record and points to ${ip[0]}"
+	get_param $1
+	echo "The subdomain $i is a $record record and points to $ip"
     done
 else
     i=$2
-    get_param "$1" "$1"
-    echo "The subdomain $i is a ${record[0]} record and points to ${ip[0]}"
+    get_param $1
+    echo "The subdomain $i is a $record record and points to $ip"
 fi

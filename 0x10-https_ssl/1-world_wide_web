@@ -2,24 +2,19 @@
 # Displays information about subdomains
 # shellcheck disable=SC2086
 
-get_record()
+get_param()
 {
-    record=($(dig $i.$1 | awk '/ANSWER SECTION:/ {getline; print $4}') )
-}
-get_ip()
-{
+    record=( $(dig $i.$1 | awk '/ANSWER SECTION:/ {getline; print $4}') )
     ip=( $(dig $i.$1 | awk '/ANSWER SECTION:/ {getline; print $5}') )
 }
 
-if [ -z $2 ]; then
+if [ -z "$2" ]; then
     for i in "www" "lb-01" "web-01" "web-02"; do
-	get_record "$1"
-	get_ip "$1"
-	echo "The subdomain $i is a $record record and points to $ip"
+	get_param "$1" "$1"
+	echo "The subdomain $i is a ${record[0]} record and points to ${ip[0]}"
     done
 else
     i=$2
-    get_record "$1"
-    get_ip "$1"
-    echo "The subdomain $i is a $record record and points to $ip"
+    get_param "$1" "$1"
+    echo "The subdomain $i is a ${record[0]} record and points to ${ip[0]}"
 fi

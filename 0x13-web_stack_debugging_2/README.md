@@ -6,7 +6,7 @@
 - All your files should end with a new line
 
 ## File Descriptions
-*0-run_nginx_as_nginx:**
+**0-run_nginx_as_nginx:**
 Fix this container so that Nginx is running as the nginx user.
 
 Requirements:

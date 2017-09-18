@@ -11,7 +11,7 @@ import csv
 if __name__ == "__main__":
     url = "https://jsonplaceholder.typicode.com/"
     employee_id = sys.argv[1]
-    filename = sys.argv[1] + ".csv"
+    filename = employee_id + ".csv"
 
     employee = requests.get(url + "users/" + employee_id)
     employee = employee.json()

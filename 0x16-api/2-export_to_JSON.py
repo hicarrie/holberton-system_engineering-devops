@@ -14,13 +14,13 @@ if __name__ == "__main__":
     filename = employee_id + ".json"
 
     employee = requests.get(url + "users/" + employee_id)
-    employee_json = employee.json()
+    employee = employee.json()
 
     tasks = requests.get(url + "todos?userId=" + employee_id)
-    tasks_json = tasks.json()
+    tasks = tasks.json()
 
     tasks_list = []
-    for item in tasks_json:
+    for item in tasks:
         tasks_list.append(item)
 
     employee_tasks = {}

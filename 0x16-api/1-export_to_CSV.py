@@ -19,9 +19,9 @@ if __name__ == "__main__":
     tasks = requests.get(url + "todos?userId=" + employee_id)
     tasks = tasks.json()
 
-    with open(filename, mode="w") as a_file:
+    with open(filename, mode="w") as csv_file:
+        writer = csv.writer(csv_file, delimiter=',',
+                            quotechar='"', quoting=csv.QUOTE_ALL)
         for item in tasks:
-            print('"{}", "{}", "{}", "{}"'.format(item.get('userId'),
-                                                  employee.get('username'),
-                                                  item.get('completed'),
-                                                  item.get('title')))
+            writer.writerow((item.get('userId'), employee.get('username'),
+                            item.get('completed'), item.get('title')))

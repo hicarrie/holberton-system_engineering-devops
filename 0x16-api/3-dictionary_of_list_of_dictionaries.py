@@ -3,9 +3,9 @@
 Returns information about all employees' TODO list progress in JSON format
 """
 
-import sys
 import requests
 import json
+import sys
 
 
 if __name__ == "__main__":
@@ -24,9 +24,9 @@ if __name__ == "__main__":
         tasks_list = []
         for item in tasks:
             task_dict = {}
-            task_dict['task'] = item['title']
-            task_dict['completed'] = item['completed']
-            task_dict['username'] = employee['username']
+            task_dict.get('task') = item.get('title')
+            task_dict.get('completed') = item.get('completed')
+            task_dict.get('username') = employee.get('username')
             tasks_list.append(task_dict)
 
         employee_tasks[employee_id] = tasks_list

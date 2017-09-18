@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Returns information about a given employee's TODO list progress
+Returns information about a given employee's TODO list progress in .CSV format
 """
 
 import sys

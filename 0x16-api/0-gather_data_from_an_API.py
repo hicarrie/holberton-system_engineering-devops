@@ -28,4 +28,4 @@ if __name__ == "__main__":
     print("Employee {} is done with tasks({}/{}):".format(
         employee.get('name'), tasks_done, tasks_total))
     for item in tasks_done_list:
-        print("\t{}".format(item.get('title')))
+        print("\t {}".format(item.get('title')))

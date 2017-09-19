@@ -24,7 +24,7 @@ if __name__ == "__main__":
         tasks_list.append(item)
 
     employee_tasks = {}
-    employee_tasks.get(employee_id) = tasks_list
+    employee_tasks[employee_id] = tasks_list
 
     with open(filename, mode="w") as json_file:
         json.dump(employee_tasks, json_file)

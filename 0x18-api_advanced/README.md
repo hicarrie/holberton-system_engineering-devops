@@ -5,7 +5,6 @@
 - Compiled with `python3`
 - All files must be executable
 - All modules should have a documentation `python3 -c 'print(__import__("my_module").__doc__)'`
-- Code should not be executed when imported
 - Use the Requests module for sending HTTP requests to the Reddit API
 
 ## File Descriptions

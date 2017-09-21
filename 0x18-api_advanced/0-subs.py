@@ -15,5 +15,9 @@ def number_of_subscribers(subreddit):
 
     about = requests.get(url, headers=headers).json()
     data = about.get('data')
+    if data is None:
+        subs = 0
+    else:
+        subs = data.get('subscribers')
 
-    return(data.get('subscribers'))
+    return(subs)

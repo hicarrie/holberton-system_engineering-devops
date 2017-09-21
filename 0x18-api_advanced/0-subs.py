@@ -13,8 +13,11 @@ def number_of_subscribers(subreddit):
     subreddit = sys.argv[1]
     url = "https://www.reddit.com/r/" + subreddit + "/about.json"
 
-    about = requests.get(url, headers=headers).json()
-    data = about.get('data')
+    about = requests.get(url, headers=headers)
+    if about is None:
+        return (0)
+
+    data = about.json().get('data')
     if data is None:
         subs = 0
     else:

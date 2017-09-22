@@ -14,13 +14,11 @@ def number_of_subscribers(subreddit):
     url = "https://www.reddit.com/r/" + subreddit + "/about.json"
 
     about = requests.get(url, headers=headers)
-    if about is None:
+    if not about:
         return (0)
 
     data = about.json().get('data')
-    if data is None:
+    subs = data.get('subscribers')
+    if subs is None:
         subs = 0
-    else:
-        subs = data.get('subscribers')
-
     return(subs)

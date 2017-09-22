@@ -15,10 +15,11 @@ def top_ten(subreddit):
     url = "https://www.reddit.com/r/" + subreddit + "/hot.json?limit=10"
 
     about = requests.get(url, headers=headers)
-    if about is None:
-        print(None)
-        return(None)
-
-    data = about.json().get('data').get('children')
-    for post in data:
-        print(post.get('data').get('title'))
+    if not about:
+        print("None")
+    else:
+        data = about.json().get('data').get('children')
+        if not data:
+            print("None")
+        for post in data:
+            print(post.get('data').get('title'))

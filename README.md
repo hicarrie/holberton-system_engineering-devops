@@ -1,5 +1,5 @@
 # Sysadmin / Devops
-### Beginning Shell / Bash Scripts
+### Beginning Shell / Bash, Puppet Scripts
 
 - 0x00 - Shell Basics
 - 0x01 - Shell Permissions

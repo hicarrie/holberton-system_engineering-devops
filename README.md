@@ -21,3 +21,7 @@
 - 0x12 - Firewall
 - 0x13 - Web Stack Debugging #2
 - 0x14 - Postmortem
+- 0x15 - Web Stack Debugging #3
+- 0x16 - API
+- 0x17 - Web Stack Debugging #4
+- 0x18 - API Advanced

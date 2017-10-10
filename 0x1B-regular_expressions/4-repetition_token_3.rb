@@ -1,3 +1,3 @@
 #!/usr/bin/env ruby
-# Accepts one argument and passes a regular expression matching Holberton
+# Accepts one argument and passes a regular expression matching method
 puts ARGV[0].scan(/hbt*n/).join
